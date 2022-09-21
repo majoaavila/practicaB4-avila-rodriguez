@@ -1,0 +1,5 @@
+.flagImg :hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    border: 20px;
+}
