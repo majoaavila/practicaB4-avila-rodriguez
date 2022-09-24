@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>MARCA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="src/js/progressBar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
@@ -15,26 +16,18 @@
 </head>
 
 <body>
+    <!-- Contenedor principal -->
     <div class="container-fluid bg-light">
-        <div class="header container-fluid bg-light">
-            <h6 class="fw-light text-center">
-                <span class="fw-bold">Es noticia:</span>
-                Leones vs Diablos Rojos /
-                Huracán Kay /
-                Pumas vs Querétaro /
-                Xolos vs Chivas /
-                Bennett-Coverley /
-                Tigres vs Toluca /
-                Precio iPhone 14 /
-                VIDEOS de hoy /
-                Últimas noticias
-            </h6>
-        </div>
-    </div>
-    <div class="container-fluid d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg">
+        <!-- Navbars -->
+        <!-- Contenedor de  navbars-->
+    <div class="container-fluid d-flex flex-column justify-content-center fixed-top">
+        <!-- Navbar principal -->
+        <nav class="container-fluid navbar navbar-expand-lg" id="mainNavbar">
+            <!-- Progress bar de lectura-->
+            <div id="progress-bar"></div>
+            <!-- Contenido navbar principal -->
+            <!-- falta alinear al centro -->
             <div class="container-fluid">
-
                 <a class="navbar-brand mx-4" href="#">
                     <img src="src/img/cuidateplus.svg" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top">
@@ -49,12 +42,14 @@
                 <div class="d-inline-flex mx-4">
                     <a class="navbar-brand" href="#">
                         <img src="src/img/marca_claro.png" alt="Logo" width="200" height="100"
-                            class="justify-content-center" />
+                            class="justify-content-center"/>
                     </a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -80,14 +75,14 @@
                         <li class="nav-item">
                             <button type="button" class="btn btn-outline-danger" href="#">Iniciar Sesión</button>
                         </li> 
-
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>
+
+    <!-- Navbar secundaria -->
     <!-- Fútbol -->
-    <div class="container-fluid bg-danger d-flex justify-content-center">
+    <div class="container-fluid bg-danger d-flex  flex-column justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -211,7 +206,11 @@
             
             </div>
         </nav>
+        
     </div>
+</div>
+    
+
     <!-- Banderas -->
     <div class="container-fluid bg-light d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg bg-light">
@@ -243,6 +242,23 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <!-- falta responsive -->
+        <!-- maybe hay q quitar el notice header -->
+        <div class="noticeHeader container-fluid bg-light">
+            <h6 class="fw-light text-center">
+                <span class="fw-bold">Es noticia:</span>
+                Leones vs Diablos Rojos /
+                Huracán Kay /
+                Pumas vs Querétaro /
+                Xolos vs Chivas /
+                Bennett-Coverley /
+                Tigres vs Toluca /
+                Precio iPhone 14 /
+                VIDEOS de hoy /
+                Últimas noticias
+            </h6>
+        </div>
     </div>
 
     <div class="container-fluid">

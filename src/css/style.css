@@ -1,5 +1,28 @@
+/* Main navbar */
+#mainNavbar {
+  background-color: rgb(255, 255, 255);
+    padding:0px;
+}
+
+
+/* Progress bar */
+#progress-bar {
+    --scrollAmount: 0%;
+    background-color: rgb(191, 4, 4);
+    width: var(--scrollAmount);
+    height: 10px;
+    position: fixed;
+    top: 0;
+}
+
 .flagImg :hover{
     transform: scale(1.5);
     transition: 0.5s;
     border: 20px;
 }
+
+
+
+
+
+
