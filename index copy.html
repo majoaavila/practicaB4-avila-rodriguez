@@ -11,7 +11,9 @@
     <script defer src="src/js/progressBar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7530791053.js" crossorigin="anonymous"></script>
     <title>MARCA</title>
 </head>
 
@@ -296,8 +298,7 @@
     </div>
 
 
-
-    
+    <!-- ANUNCIO-->
 
     <div class="container">
         <div class="row">
@@ -309,14 +310,13 @@
         </div>
     </div>
 
-
     <!-- CARDS -->
-    <!-- <div class="container-fluid mt-2"> -->
     <div class="row">
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6">
-            <div class="card mb-3">
-                <img src="https://phantom-marca.unidadeditorial.es/98d0df4db777615de9be0a8e79cceb2a/resize/660/f/webp/assets/multimedia/imagenes/2022/09/21/16637971773812.jpg"
-                    class="card-img-top">
+        <!-- Card principal -->
+        <div class="col-lg-8 col-md-12">
+            <div class="card border-white">
+                <img class="card-img-top"
+                    src="https://phantom-marca.unidadeditorial.es/98d0df4db777615de9be0a8e79cceb2a/resize/660/f/webp/assets/multimedia/imagenes/2022/09/21/16637971773812.jpg" />
                 <div class="card-img-overlay d-flex align-items-start flex-column">
                     <h3 class="card-title"><span class="badge bg-dark position-absolute top-0 start-0">En directo</span>
                     </h3>
@@ -325,65 +325,133 @@
                     <p class="fs-6 text-danger fw-bold">FC CINCINNATI VS CHIVAS</p>
                     <h2 class="card-title fw-bold">Cincinnati vs Chivas, en vivo</h2>
                 </div>
+                <hr class="mb-2 mt-2" />
             </div>
         </div>
+        <!-- Cards secundarias -->
         <!-- SELECCION MEXICANA -->
-
-        <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-6">
-            <div class="row">
-                <div class="card mb-3">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="https://phantom-marca.unidadeditorial.es/7d03e6995f847b186c5a3fed9ac2fd4d/resize/660/f/webp/assets/multimedia/imagenes/2022/09/21/16637972830371.jpg"
-                                class="img-fluid">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-title text-danger fw-bold">SELECCIÓN MEXICANA</p>
-                                <p class="card-text fw-bold">Héctor Herrera: "Yo convocaría a Chicharito y Vela"</p>
-                            </div>
+        <div class="col-md-12 col-lg-4">
+            <div class="card border-white">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="https://phantom-marca.unidadeditorial.es/7d03e6995f847b186c5a3fed9ac2fd4d/resize/660/f/webp/assets/multimedia/imagenes/2022/09/21/16637972830371.jpg"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body p-0 pb-1">
+                            <h5 class="card-title text-danger fs-6 fw-bold">SELECCIÓN MEXICANA</h5>
+                            <p class="card-text fs-5">
+                                "Yo convocaría a Chicharito y Vela"
+                            </p>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-
-            <!-- LIGA MX -->
-            <div class="card mb-3">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-6">
+                        <p class=" mb-1 fw-bold">
+                            Héctor Herrera
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <figcaption class="figure-caption col-8 text-end">
+                            <i class="fa-solid fa-thumbs-up"></i><span class="ms-1 text-danger fw-bold lh-1">12</span>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="card-footer mt-0 bg-transparent">
+                </div>
+            </div>
+            <div class="card border-white">
+                <div class="row">
+                    <div class="col-6">
                         <img src="https://phantom-marca.unidadeditorial.es/927fae623f63d778451ff63bc3fe0cf8/resize/660/f/webp/assets/multimedia/imagenes/2022/09/21/16637885018184.jpg"
                             class="img-fluid">
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <p class="card-title text-danger fw-bold">LIGA MX</p>
-                            <p class="card-text fw-bold">¿Llegará el 'Ojo de Halcón' a la Liga MX?</p>
+                    <div class="col-6">
+                        <div class="card-body p-0 pb-1">
+                            <h5 class="card-title text-danger fs-6 fw-bold">LIGA MX</h5>
+                            <p class="card-text fs-5">
+                                ¿Llegará el 'Ojo de Halcón' a la Liga MX?
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- QATAR 2022 -->
-            <div class="card mb-3">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://phantom-marca.unidadeditorial.es/5a921db99dec59abe63f95dc907eb735/resize/660/f/webp/assets/multimedia/imagenes/2022/09/20/16637035580617.jpg"
-                            class="img-fluid rounded-start">
+                    <div class="col-6">
+                        <p class=" mb-1 fw-bold">
+                            Ojo de Halcón
+                        </p>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <p class="card-title text-danger fw-bold">QATAR 2022</p>
-                            <p class="card-text fw-bold">Fecha FIFA en vivo: Lionel Messi y Argentina, por
-                                Claro Sports</p>
+                    <div class="col-6">
+                        <figcaption class="figure-caption col-8 text-end">
+                            <i class="fa-solid fa-thumbs-up"></i><span class="ms-1 text-danger fw-bold lh-1">20</span>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="card-footer mt-0 bg-transparent">
+                </div>
+            </div>
+            <div class="card border-white">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="https://phantom-marca.unidadeditorial.es/5a921db99dec59abe63f95dc907eb735/resize/660/f/webp/assets/multimedia/imagenes/2022/09/20/16637035580617.jpg"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body p-0 pb-1">
+                            <h5 class="card-title text-danger fs-6 fw-bold">QATAR 2022</h5>
+                            <p class="card-text fs-5">
+                                Fecha FIFA en vivo: Lionel Messi y Argentina, por
+                                Claro Sports
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p class=" mb-1 fw-bold">
+                            Messi</p>
+                    </div>
+                    <div class="col-6">
+                        <figcaption class="figure-caption col-8 text-end">
+                            <i class="fa-solid fa-thumbs-up"></i><span class="ms-1 text-danger fw-bold lh-1">12</span>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="card-footer mt-0 bg-transparent">
+                </div>
             </div>
-
         </div>
     </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- MEMO -->
     <div class="card mb-3">
         <div class="row g-0">
@@ -399,12 +467,12 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 
     <hr class="my-4">
 
-   <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
         <div class="row">
             <div class="col mb-4">
                 <div class="card" style="width: 18rem;">
